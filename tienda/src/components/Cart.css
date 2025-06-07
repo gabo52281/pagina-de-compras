@@ -1,0 +1,97 @@
+.cart {
+    background: #000;
+    display: none;
+    padding: 32px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    overflow-y: auto;
+    height: 100%;
+
+  }
+  
+  .cart img {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  
+  .cart li {
+    border-bottom: 1px solid #444;
+    padding-bottom: 16px;
+  }
+  
+  .cart-counter {
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: 10;
+  }
+
+  .cart footer {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espaciado adicional */
+    padding-bottom: 50px;
+}
+
+
+.cart-footer{
+
+  position: sticky; /* Hace que el footer sea pegajoso */
+  bottom: 0; /* Lo fija en la parte inferior del contenedor */
+  background: #000; /* Fondo para que no se superponga con los productos */
+  
+  width: 100%;
+}
+
+
+  .cart footer button {
+    padding: 10px;
+    
+    
+  }
+  
+  .cart-button {
+    align-items: center;
+    background: #09f;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    padding: 4px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transition: all .3s ease;
+    width: 32px;
+    z-index: 9999;
+  }
+  
+  .cart-button:hover {
+    scale: 1.1;
+  }
+  
+  .cart-button ~ input:checked ~ .cart {
+    height: 100%;
+    display: block;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+
